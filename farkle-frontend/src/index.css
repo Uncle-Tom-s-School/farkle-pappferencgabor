@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(51, 14, 0);
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #region PLAYERS */
+#opponent {
+    top: 0;
+    left: 0;
+}
+#opponent .userPoints {
+    background-color: sienna;
+}
+
+#player {
+    bottom: 0;
+    left: 0;
+}
+#player .userPoints {
+    background-color: darkslategray;
+}
+
+.user > * {
+    margin: 0;
+}
+.user {
+    width: 150px;
+    background-color: rgb(255, 192, 115);
+    padding: 25px 10px;
+    position: absolute;
+}
+.user hr {
+    margin: 5px;
+    color: black;
+    border: 1px solid black;
+}
+.userPoints {
+    color: goldenrod;
+    text-align: right;
+}
+.totalPoints, .roundNumber, .selectedNumber {
+    color: rgb(165, 0, 0);
+    text-align: right;
+}
+/* #endregion */
+
+/* #region DICES */
+#diceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#diceRollBtn {
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(255, 192, 115);
+}
+#dices {
+    display: flex;
+    gap: 25px;
+}
+.dice {
+    font-size: 48px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+/* #endregion */
